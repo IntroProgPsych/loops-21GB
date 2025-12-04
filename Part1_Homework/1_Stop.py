@@ -22,3 +22,22 @@
 #   - Stop only when total >= target
 
 # Write your code here:
+
+target = int(input("Type in a target number: "))
+total = 0
+
+while total < target:
+    number = int(input("Type in a number to add to the total: "))
+    total += number 
+    print(f"Current total: {total}")
+
+    if total > target:
+        print(f"Total is {total}, which is bigger than the target {target}. Try again!")
+        total = 0
+        
+    if total < 0:
+        print("Total went below zero, resetting to 0.")
+        total = 0
+
+print(f"Total reached: {total}")
+print("Congratulations, you reached the target!")

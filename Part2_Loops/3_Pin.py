@@ -20,3 +20,16 @@
 
 
 # Write your code here:
+
+code = input("Type in the PIN to enter: ")
+attempts = 1
+
+while code != "6969":
+    print("Wrong")
+    code = input("Type in the PIN to enter: ")
+    attempts += 1
+
+print("\n")
+print(f"It took you {attempts} attempts")
+print("Congratulations hacker man, the police is coming now! :D")
+
